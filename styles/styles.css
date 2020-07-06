@@ -78,53 +78,37 @@ body {
 
 .hero__container-content .illustration {
   width: 80%;
-  -webkit-animation: illustration 3s infinite;
-          animation: illustration 3s infinite;
+  -webkit-animation: illustration 4s infinite;
+          animation: illustration 4s infinite;
 }
 
 @-webkit-keyframes illustration {
   0% {
-    -webkit-transform: rotateZ(2deg);
-            transform: rotateZ(2deg);
-  }
-  25% {
-    -webkit-transform: rotateZ(-5deg);
-            transform: rotateZ(-5deg);
+    -webkit-transform: rotateZ(3deg) scale(0.9);
+            transform: rotateZ(3deg) scale(0.9);
   }
   50% {
     -webkit-transform: rotateZ(-10deg) scale(1.1);
             transform: rotateZ(-10deg) scale(1.1);
   }
-  75% {
-    -webkit-transform: rotateZ(-5deg);
-            transform: rotateZ(-5deg);
-  }
   100% {
-    -webkit-transform: rotateZ(2deg);
-            transform: rotateZ(2deg);
+    -webkit-transform: rotateZ(3deg) scale(0.9);
+            transform: rotateZ(3deg) scale(0.9);
   }
 }
 
 @keyframes illustration {
   0% {
-    -webkit-transform: rotateZ(2deg);
-            transform: rotateZ(2deg);
-  }
-  25% {
-    -webkit-transform: rotateZ(-5deg);
-            transform: rotateZ(-5deg);
+    -webkit-transform: rotateZ(3deg) scale(0.9);
+            transform: rotateZ(3deg) scale(0.9);
   }
   50% {
     -webkit-transform: rotateZ(-10deg) scale(1.1);
             transform: rotateZ(-10deg) scale(1.1);
   }
-  75% {
-    -webkit-transform: rotateZ(-5deg);
-            transform: rotateZ(-5deg);
-  }
   100% {
-    -webkit-transform: rotateZ(2deg);
-            transform: rotateZ(2deg);
+    -webkit-transform: rotateZ(3deg) scale(0.9);
+            transform: rotateZ(3deg) scale(0.9);
   }
 }
 

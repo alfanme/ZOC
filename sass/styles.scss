@@ -34,24 +34,24 @@
 
             .illustration {
                 width: 80%;
-                animation: illustration 3s infinite;
+                animation: illustration 4s infinite;
 
                 @keyframes illustration {
                     0% {
-                        transform: rotateZ(2deg);
-                    }
-                    25% {
-                        transform: rotateZ(-5deg);
+                        transform: rotateZ(3deg) scale(0.9);
                     }
                     50% {
                         transform: rotateZ(-10deg) scale(1.1);
                     }
-                    75% {
-                        transform: rotateZ(-5deg);
-                    }
                     100% {
-                        transform: rotateZ(2deg);
+                        transform: rotateZ(3deg) scale(0.9);
                     }
+                    // 100% {
+                    //     transform: rotateZ(5deg);
+                    // }
+                    // 100% {
+                    //     transform: rotateZ(2deg);
+                    // }
 
                 }
             }
