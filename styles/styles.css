@@ -1,8 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 * {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
@@ -11,8 +19,7 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 .hero {
@@ -57,6 +64,13 @@ body {
   width: 5rem;
 }
 
+@media (min-width: 43em) {
+  .hero__container .logo {
+    width: 7rem;
+    margin-bottom: 3rem;
+  }
+}
+
 .hero__container-content {
   width: 100%;
   height: 100%;
@@ -76,10 +90,25 @@ body {
           justify-content: center;
 }
 
+@media (min-width: 43em) {
+  .hero__container-content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 .hero__container-content .illustration {
-  width: 80%;
+  max-width: 18rem;
   -webkit-animation: illustration 4s infinite;
           animation: illustration 4s infinite;
+}
+
+@media (min-width: 43em) {
+  .hero__container-content .illustration {
+    max-width: 23rem;
+  }
 }
 
 @-webkit-keyframes illustration {
@@ -112,14 +141,48 @@ body {
   }
 }
 
-.hero__container-content h1 {
+.hero__container-content-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 43em) {
+  .hero__container-content-desc {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: -1.5rem;
+    margin-right: 13vw;
+  }
+}
+
+.hero__container-content-desc h1 {
   text-align: center;
   font-family: "Lilita One", cursive;
   font-size: 3rem;
   color: #F8F0E3;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.hero__container-content button {
+@media (min-width: 43em) {
+  .hero__container-content-desc h1 {
+    text-align: left;
+  }
+}
+
+.hero__container-content-desc button {
   outline: none;
   border: none;
   background-color: #F9C4D4;
@@ -135,10 +198,133 @@ body {
   transition: all 0.3s ease;
 }
 
-.hero__container-content button:hover {
+.hero__container-content-desc button:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.keunggulan {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 3rem;
+  background-color: #F8F0E3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.keunggulan__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.keunggulan__container h1 {
+  text-align: center;
+  font-family: "Lilita One", cursive;
+  font-size: 2rem;
+  color: #005A61;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 43em) {
+  .keunggulan__container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.keunggulan__container-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (min-width: 43em) {
+  .keunggulan__container-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.keunggulan__container-wrapper-content {
+  max-width: 22rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.5rem 0;
+}
+
+@media (min-width: 43em) {
+  .keunggulan__container-wrapper-content {
+    margin: 4rem 2rem;
+  }
+}
+
+.keunggulan__container-wrapper-content img {
+  width: 7rem;
+  margin-bottom: 2rem;
+}
+
+.keunggulan__container-wrapper-content h2 {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: #005A61;
+}
+
+.keunggulan__container-wrapper-content p {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.7;
+  color: #005A61;
 }
 /*# sourceMappingURL=styles.css.map */
