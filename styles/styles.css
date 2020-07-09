@@ -10,6 +10,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 * {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -489,7 +491,7 @@ body {
           align-items: center;
   border: none;
   border-radius: 0.5rem;
-  width: 11rem;
+  width: 11.5rem;
   height: 2.5rem;
   padding: 0 0.85rem 0 1.5rem;
   margin-top: 0rem;
@@ -529,11 +531,13 @@ body {
   top: 6rem;
   right: 2rem;
   z-index: 1;
-  width: 11rem;
+  width: 11.5rem;
   height: 11rem;
   padding: 1rem 0;
   border-radius: 0.5rem;
   background-color: white;
+  -webkit-box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.1);
   opacity: 0;
   -webkit-transform: translateY(-30%);
           transform: translateY(-30%);
@@ -574,5 +578,128 @@ body {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.daftar {
+  width: 100%;
+  min-height: 85vh;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.daftar__wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.daftar__wrapper-card {
+  width: 11.5rem;
+  padding: 0.5rem;
+  margin: 0.55rem 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.daftar__wrapper-card img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.daftar__wrapper-card-desc {
+  margin: 0.5rem;
+}
+
+.daftar__wrapper-card-desc h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #005A61;
+  margin-bottom: 0.1rem;
+}
+
+.daftar__wrapper-card-desc h4 {
+  font-size: 0.8rem;
+  color: orangered;
+  margin-bottom: 0.2rem;
+}
+
+.daftar__wrapper-card-desc p {
+  font-size: 0.7rem;
+  color: rgba(0, 90, 97, 0.9);
+}
+
+.daftar__wrapper-card button {
+  border: 0;
+  width: 100%;
+  height: 2rem;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: orangered;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.daftar__wrapper-card button:hover {
+  cursor: pointer;
+}
+
+.keranjang {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 2rem 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(248, 240, 227, 0)), color-stop(#F8F0E3), color-stop(#F8F0E3), to(#F8F0E3));
+  background-image: linear-gradient(rgba(248, 240, 227, 0), #F8F0E3, #F8F0E3, #F8F0E3);
+}
+
+.keranjang__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+  cursor: pointer;
+  background-color: #005A61;
+}
+
+.keranjang__card img {
+  height: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.keranjang__card p {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #F8F0E3;
 }
 /*# sourceMappingURL=styles.css.map */

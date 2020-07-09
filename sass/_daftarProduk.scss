@@ -1,0 +1,105 @@
+@import 'variables';
+
+.daftar {
+    width: 100%;
+    min-height: 85vh;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &-card {
+            width: 11.5rem;
+            padding: 0.5rem;
+            margin: 0.55rem 0.5rem;
+            border-radius: 0.5rem;
+            background-color: #fff;
+
+            img {
+                width: 100%;
+                border-radius: 0.25rem;
+            }
+
+            &-desc {
+                margin: 0.5rem;
+
+                h3 {
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                    color: $green;
+                    margin-bottom: 0.1rem;
+                }
+    
+                h4 {
+                    font-size: 0.8rem;
+                    color: orangered;
+                    margin-bottom: 0.2rem;
+                }
+    
+                p {
+                    font-size: 0.7rem;
+                    color: $green-hover;
+                }
+
+            }
+            
+            button {
+                border: 0;
+                width: 100%;
+                height: 2rem;
+                margin-top: 0.5rem;
+                border-radius: 0.25rem;
+                background-color: orangered;
+                color: white;
+                font-size: 0.75rem;
+                font-weight: 600;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+}
+
+.keranjang {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem 2rem 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: $yellow;
+    background-image: linear-gradient($yellow-transparent, $yellow, $yellow, $yellow);
+
+    &__card {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        height: 3.5rem;
+        border-radius: 0.5rem;
+        padding: 0 2rem;
+        cursor: pointer;
+        background-color: $green;
+
+        img {
+            height: 1.25rem;
+            margin-right: 0.75rem;
+        }
+
+        p {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: $yellow;
+        }
+    }
+}
