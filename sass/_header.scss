@@ -94,7 +94,6 @@
                 }
     
                 button {
-                    outline: none;
                     border: none;
                     background-color: $pink;
                     color: $green;
@@ -110,6 +109,10 @@
                     &:hover {
                         transform: scale(1.05);
                         // box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+                    }
+
+                    &:active {
+                        outline: none;
                     }
                 }
             }
