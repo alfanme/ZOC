@@ -8,6 +8,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 * {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -24,12 +26,13 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #F8F0E3;
 }
 
 .hero {
   width: 100%;
   min-height: 100vh;
-  padding: 4rem 3rem;
+  padding: 4rem 2rem;
   background-color: #005A61;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,7 +212,6 @@ body {
 
 .keunggulan {
   width: 100%;
-  min-height: 100vh;
   padding: 4rem 2rem;
   background-color: #F8F0E3;
   display: -webkit-box;
@@ -385,5 +387,156 @@ body {
 .footer__container img {
   margin-top: 1rem;
   width: 3rem;
+}
+
+.navigation {
+  position: relative;
+  width: 100%;
+  min-height: 15vh;
+  padding: 0rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__container .kembali {
+  border: none;
+  outline: none;
+  background-color: #F8F0E3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.0325rem;
+  color: #005A61;
+}
+
+.navigation__container .kembali:hover {
+  cursor: pointer;
+}
+
+.navigation__container .kembali img {
+  height: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.navigation__container .kategori {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  width: 11rem;
+  height: 2.5rem;
+  padding: 0 0.85rem 0 1.5rem;
+  margin-top: 0rem;
+  background-color: #005A61;
+  color: #F8F0E3;
+  font-size: 1rem;
+}
+
+.navigation__container .kategori:hover {
+  background-color: rgba(0, 90, 97, 0.9);
+  cursor: pointer;
+}
+
+.navigation__container .kategori img {
+  height: 0.85rem;
+}
+
+.navigation__container .option {
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  top: 6rem;
+  right: 2rem;
+  z-index: 1;
+  width: 11rem;
+  height: 11rem;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  background-color: white;
+  opacity: 0;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.navigation__container .option a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 2rem;
+  width: 100%;
+  height: 3rem;
+  color: #005A61;
+  text-decoration: none;
+}
+
+.navigation__container .option a:visited {
+  color: #005A61;
+}
+
+.navigation__container .option a:hover {
+  background-color: #f5f5f5;
+}
+
+.navigation__container .active {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 /*# sourceMappingURL=styles.css.map */
