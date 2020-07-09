@@ -5,12 +5,16 @@
 .keunggulan {
     width: 100%;
     min-height: 100vh;
-    padding: 4rem 3rem;
+    padding: 4rem 1rem;
     background-color: $yellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (min-width: 43em) {
+        padding: 4rem 3rem;
+    }
 
     &__container{
         width: 100%;
@@ -40,16 +44,17 @@
             flex-direction: column;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             // background-color: salmon;
 
             @media (min-width: 43em) {
                 flex-direction: row;
+                align-items: flex-start;
             }
 
             &-content {
                 // background-color: orange;
-                max-width: 22rem;
+                max-width: 23rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;

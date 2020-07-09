@@ -206,7 +206,7 @@ body {
 .keunggulan {
   width: 100%;
   min-height: 100vh;
-  padding: 4rem 3rem;
+  padding: 4rem 1rem;
   background-color: #F8F0E3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,6 +221,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 43em) {
+  .keunggulan {
+    padding: 4rem 3rem;
+  }
 }
 
 .keunggulan__container {
@@ -270,9 +276,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 43em) {
@@ -281,11 +287,14 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
 .keunggulan__container-wrapper-content {
-  max-width: 22rem;
+  max-width: 23rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
