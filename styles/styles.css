@@ -397,8 +397,7 @@ body {
 .navigation {
   position: relative;
   width: 100%;
-  min-height: 15vh;
-  padding: 0rem 2rem;
+  padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,8 +527,8 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  top: 6rem;
-  right: 2rem;
+  top: 5rem;
+  right: 1.5rem;
   z-index: 1;
   width: 11.5rem;
   height: 11rem;
@@ -584,15 +583,14 @@ body {
   width: 100%;
   min-height: 85vh;
   padding: 1rem 1rem 10rem 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.daftar h1 {
+  line-height: 1;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #005A61;
+  margin: 1rem 0 1.5rem 0.5rem;
 }
 
 .daftar__parent {
@@ -624,11 +622,10 @@ body {
 }
 
 .daftar__parent-wrapper-card {
-  width: calc(50% - 1rem);
+  width: 50%;
   padding: 0.5rem;
-  margin: 0.55rem 0.5rem;
+  margin: 1rem 0rem;
   border-radius: 0.5rem;
-  background-color: #fff;
 }
 
 @media (min-width: 43em) {
@@ -639,37 +636,37 @@ body {
 
 .daftar__parent-wrapper-card img {
   width: 100%;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .daftar__parent-wrapper-card-desc {
-  margin: 0.5rem;
+  margin: 0.75rem 0.25rem;
 }
 
 .daftar__parent-wrapper-card-desc h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #005A61;
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.3rem;
 }
 
 .daftar__parent-wrapper-card-desc h4 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: orangered;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.4rem;
 }
 
 .daftar__parent-wrapper-card-desc p {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: rgba(0, 90, 97, 0.9);
 }
 
 .daftar__parent-wrapper-card button {
   border: 0;
   width: 100%;
-  height: 2rem;
+  height: 2.5rem;
   margin-top: 0.5rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   background-color: orangered;
   color: white;
   font-size: 0.75rem;
