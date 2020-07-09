@@ -9,6 +9,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: navIn 1s ease;
+
+    @keyframes navIn {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
 
     &__container {
         width: 100%;
@@ -19,7 +29,6 @@
 
         .kembali {
             border: none;
-            outline: none;
             background-color: $yellow;
             display: flex;
             justify-content: center;
@@ -31,6 +40,10 @@
 
             &:hover {
                 cursor: pointer;
+            }
+
+            &:focus {
+                outline: 0 !important;
             }
 
             img {
@@ -60,7 +73,7 @@
             }
 
             &:focus {
-                outline: none !important;
+                outline: 0 !important;
             }
 
             img {
@@ -107,7 +120,7 @@
                 }
 
                 &:focus {
-                    outline: none !important;
+                    outline: 0 !important;
                 }
             }
         }

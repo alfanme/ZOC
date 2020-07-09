@@ -210,7 +210,7 @@ body {
 }
 
 .hero__container-content-desc button:focus {
-  outline: none !important;
+  outline: 0 !important;
 }
 
 .keunggulan {
@@ -406,6 +406,30 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation: navIn 1s ease;
+          animation: navIn 1s ease;
+}
+
+@-webkit-keyframes navIn {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes navIn {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .navigation__container {
@@ -424,7 +448,6 @@ body {
 
 .navigation__container .kembali {
   border: none;
-  outline: none;
   background-color: #F8F0E3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,6 +465,10 @@ body {
 
 .navigation__container .kembali:hover {
   cursor: pointer;
+}
+
+.navigation__container .kembali:focus {
+  outline: 0 !important;
 }
 
 .navigation__container .kembali img {
@@ -477,7 +504,7 @@ body {
 }
 
 .navigation__container .kategori:focus {
-  outline: none !important;
+  outline: 0 !important;
 }
 
 .navigation__container .kategori img {
@@ -540,7 +567,7 @@ body {
 }
 
 .navigation__container .option a:focus {
-  outline: none !important;
+  outline: 0 !important;
 }
 
 .navigation__container .active {
