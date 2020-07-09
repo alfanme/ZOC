@@ -372,6 +372,7 @@ body {
 }
 
 .footer__container p a {
+  color: #F8F0E3;
   text-decoration: none;
   font-weight: bold;
 }
