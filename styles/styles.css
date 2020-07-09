@@ -4,6 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 * {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -335,5 +339,50 @@ body {
   text-align: center;
   line-height: 1.7;
   color: #005A61;
+}
+
+.footer {
+  width: 100%;
+  min-height: 20vh;
+  background-color: #005A61;
+}
+
+.footer__container {
+  padding: 3rem 2rem 1.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__container p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  color: #F8F0E3;
+  text-align: center;
+}
+
+.footer__container p a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer__container p a:visited {
+  color: #F8F0E3;
+  text-decoration: none;
+}
+
+.footer__container img {
+  margin-top: 1rem;
+  width: 2.5rem;
 }
 /*# sourceMappingURL=styles.css.map */

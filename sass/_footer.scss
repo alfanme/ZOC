@@ -1,0 +1,37 @@
+@import 'variables';
+
+.footer {
+    width: 100%;
+    min-height: 20vh;
+    background-color: $green;
+
+    &__container {
+        padding: 3rem 2rem 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 0.85rem;
+            line-height: 1.7;
+            color: $yellow;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+
+                &:visited {
+                    color: $yellow;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        img {
+            margin-top: 1rem;
+            width: 2.5rem;
+        }
+    }
+}
