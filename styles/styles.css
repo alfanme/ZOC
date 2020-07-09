@@ -209,8 +209,8 @@ body {
           transform: scale(1.05);
 }
 
-.hero__container-content-desc button:active {
-  outline: none;
+.hero__container-content-desc button:focus {
+  outline: none !important;
 }
 
 .keunggulan {
@@ -436,7 +436,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1rem;
-  font-weight: 600;
   letter-spacing: 0.0325rem;
   color: #005A61;
 }
@@ -447,7 +446,7 @@ body {
 
 .navigation__container .kembali img {
   height: 1.5rem;
-  margin-right: 0.75rem;
+  margin-right: 0.5rem;
 }
 
 .navigation__container .kategori {
@@ -477,8 +476,8 @@ body {
   cursor: pointer;
 }
 
-.navigation__container .kategori:active {
-  outline: none;
+.navigation__container .kategori:focus {
+  outline: none !important;
 }
 
 .navigation__container .kategori img {
@@ -540,8 +539,8 @@ body {
   background-color: #f5f5f5;
 }
 
-.navigation__container .option a:active {
-  outline: none;
+.navigation__container .option a:focus {
+  outline: none !important;
 }
 
 .navigation__container .active {

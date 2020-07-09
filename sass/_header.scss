@@ -111,8 +111,8 @@
                         // box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
                     }
 
-                    &:active {
-                        outline: none;
+                    &:focus {
+                        outline: none !important;
                     }
                 }
             }
