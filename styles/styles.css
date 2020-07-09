@@ -583,64 +583,88 @@ body {
 .daftar {
   width: 100%;
   min-height: 85vh;
-  padding: 1.5rem;
+  padding: 1rem 1rem 10rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.daftar__wrapper {
+.daftar__parent {
   width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.daftar__wrapper-card {
-  width: 11.5rem;
+.daftar__parent-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.daftar__parent-wrapper-card {
+  width: calc(50% - 1rem);
   padding: 0.5rem;
   margin: 0.55rem 0.5rem;
   border-radius: 0.5rem;
   background-color: #fff;
 }
 
-.daftar__wrapper-card img {
+@media (min-width: 43em) {
+  .daftar__parent-wrapper-card {
+    width: 11.5rem;
+  }
+}
+
+.daftar__parent-wrapper-card img {
   width: 100%;
   border-radius: 0.25rem;
 }
 
-.daftar__wrapper-card-desc {
+.daftar__parent-wrapper-card-desc {
   margin: 0.5rem;
 }
 
-.daftar__wrapper-card-desc h3 {
+.daftar__parent-wrapper-card-desc h3 {
   font-size: 0.9rem;
   font-weight: 600;
   color: #005A61;
   margin-bottom: 0.1rem;
 }
 
-.daftar__wrapper-card-desc h4 {
+.daftar__parent-wrapper-card-desc h4 {
   font-size: 0.8rem;
   color: orangered;
   margin-bottom: 0.2rem;
 }
 
-.daftar__wrapper-card-desc p {
+.daftar__parent-wrapper-card-desc p {
   font-size: 0.7rem;
   color: rgba(0, 90, 97, 0.9);
 }
 
-.daftar__wrapper-card button {
+.daftar__parent-wrapper-card button {
   border: 0;
   width: 100%;
   height: 2rem;
@@ -652,7 +676,7 @@ body {
   font-weight: 600;
 }
 
-.daftar__wrapper-card button:hover {
+.daftar__parent-wrapper-card button:hover {
   cursor: pointer;
 }
 
