@@ -4,6 +4,7 @@
     width: 100%;
     min-height: 85vh;
     padding: 1rem 1rem 10rem 1rem;
+    // background-color: red;
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
@@ -14,7 +15,7 @@
         font-size: 2rem;
         font-weight: 900;
         color: $green;
-        margin: 1rem 0 1.5rem 0.5rem;
+        margin: 1rem 0 1.5rem 1rem;
     }
 
     &__parent {
@@ -33,12 +34,12 @@
             margin: 0 auto;
     
             &-card {
-                width: 50%;
+                width: calc(50% - 2rem);
                 @media (min-width: 43em) {
                     width: 11.5rem;
                 }
-                padding: 0.5rem;
-                margin: 1rem 0rem;
+                padding: 0rem;
+                margin: 2rem 1rem;
                 border-radius: 0.5rem;
                 // background-color: #fff;
     
@@ -78,7 +79,7 @@
                     border-radius: 0.5rem;
                     background-color: orangered;
                     color: white;
-                    font-size: 0.75rem;
+                    font-size: 0.85rem;
                     font-weight: 600;
     
                     &:hover {
@@ -90,39 +91,4 @@
         }
     }
 
-}
-
-.keranjang {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 2rem 1.5rem 1.5rem 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // background-color: $yellow;
-    background-image: linear-gradient($yellow-transparent, $yellow, $yellow, $yellow);
-
-    &__card {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 3.5rem;
-        border-radius: 0.5rem;
-        padding: 0 2rem;
-        cursor: pointer;
-        background-color: $green;
-
-        img {
-            height: 1.25rem;
-            margin-right: 0.75rem;
-        }
-
-        p {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: $yellow;
-        }
-    }
 }

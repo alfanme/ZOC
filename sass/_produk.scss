@@ -75,8 +75,14 @@
                 outline: 0 !important;
             }
 
-            img {
-                height: 0.85rem;
+            .arrow-down {
+                height: 1.75rem;
+                transform: rotateZ(0deg);
+                transition: transform 0.3s ease;
+            }
+
+            .flip {
+                transform: rotateZ(180deg);
             }
         }
 
@@ -131,4 +137,61 @@
         }
         
     }
+}
+
+.keranjang {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: $yellow;
+    background-image: linear-gradient($yellow-transparent, $yellow, $yellow, $yellow);
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 3.5rem;
+        border-radius: 0.5rem;
+        padding: 0 2rem;
+        cursor: pointer;
+        background-color: $green;
+
+        &:hover {
+            background-color: $green-hover;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 700;
+            color: $yellow;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-top: -0.05rem;
+                height: 1.5rem;
+                margin-right: 0.5rem;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 0.85rem;
+            }
+        }
+
+    }
+}
+
+.show-keranjang {
+    transform: translateY(0);
 }

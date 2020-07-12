@@ -508,8 +508,19 @@ body {
   outline: 0 !important;
 }
 
-.navigation__container .kategori img {
-  height: 0.85rem;
+.navigation__container .kategori .arrow-down {
+  height: 1.75rem;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.navigation__container .kategori .flip {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
 }
 
 .navigation__container .option {
@@ -579,6 +590,83 @@ body {
           transform: translateY(0);
 }
 
+.keranjang {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(248, 240, 227, 0)), color-stop(#F8F0E3), color-stop(#F8F0E3), to(#F8F0E3));
+  background-image: linear-gradient(rgba(248, 240, 227, 0), #F8F0E3, #F8F0E3, #F8F0E3);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.keranjang__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  padding: 0 2rem;
+  cursor: pointer;
+  background-color: #005A61;
+}
+
+.keranjang__card:hover {
+  background-color: rgba(0, 90, 97, 0.9);
+}
+
+.keranjang__card p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #F8F0E3;
+}
+
+.keranjang__card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.keranjang__card-item img {
+  margin-top: -0.05rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.keranjang__card-item p {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.show-keranjang {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .daftar {
   width: 100%;
   min-height: 85vh;
@@ -590,7 +678,7 @@ body {
   font-size: 2rem;
   font-weight: 900;
   color: #005A61;
-  margin: 1rem 0 1.5rem 0.5rem;
+  margin: 1rem 0 1.5rem 1rem;
 }
 
 .daftar__parent {
@@ -622,9 +710,9 @@ body {
 }
 
 .daftar__parent-wrapper-card {
-  width: 50%;
-  padding: 0.5rem;
-  margin: 1rem 0rem;
+  width: calc(50% - 2rem);
+  padding: 0rem;
+  margin: 2rem 1rem;
   border-radius: 0.5rem;
 }
 
@@ -669,58 +757,11 @@ body {
   border-radius: 0.5rem;
   background-color: orangered;
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
 .daftar__parent-wrapper-card button:hover {
   cursor: pointer;
-}
-
-.keranjang {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(248, 240, 227, 0)), color-stop(#F8F0E3), color-stop(#F8F0E3), to(#F8F0E3));
-  background-image: linear-gradient(rgba(248, 240, 227, 0), #F8F0E3, #F8F0E3, #F8F0E3);
-}
-
-.keranjang__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 3.5rem;
-  border-radius: 0.5rem;
-  padding: 0 2rem;
-  cursor: pointer;
-  background-color: #005A61;
-}
-
-.keranjang__card img {
-  height: 1.25rem;
-  margin-right: 0.75rem;
-}
-
-.keranjang__card p {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #F8F0E3;
 }
 /*# sourceMappingURL=styles.css.map */

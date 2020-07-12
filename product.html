@@ -10,12 +10,12 @@
     <header class="navigation">
         <div class="navigation__container">
             <button class="kembali" onclick="goBack()">
-                <img src="./media/arrow.svg" alt="">
+                <img src="./media/arrow-left-line.svg" alt="">
                 Kembali
             </button>
             <button class="kategori" onclick="showOption()">
                 Pilih kategori
-                <img src="./media/drop-down.svg" alt="">
+                <img class="arrow-down" src="./media/arrow-drop-down-line.svg" alt="">
             </button>
             <div class="option">
                 <a href="#">Pempek</a>
@@ -32,47 +32,47 @@
                 <div class="daftar__parent-wrapper-card">
                     <img src="./media/garlicbread.jpg" alt="">
                     <div class="daftar__parent-wrapper-card-desc">
-                        <h3>Korean Garlic Bread</h3>
-                        <h4>Rp60.000</h4>
-                        <p>per box isi 4</p>
+                        <h3 class="nama">Korean Garlic Bread</h3>
+                        <h4 class="harga">Rp60000</h4>
+                        <p class="detail">per box isi 4</p>
                     </div>
-                    <button>+ Tambah</button>
+                    <button class="tambah">+ Tambah</button>
                 </div>
                 <div class="daftar__parent-wrapper-card">
                     <img src="./media/garlicbread.jpg" alt="">
                     <div class="daftar__parent-wrapper-card-desc">
-                        <h3>Korean Garlic Bread</h3>
-                        <h4>Rp60.000</h4>
-                        <p>per box isi 4</p>
+                        <h3 class="nama">Korean Garlic Bread</h3>
+                        <h4 class="harga">Rp50000</h4>
+                        <p class="detail">per box isi 4</p>
                     </div>
-                    <button>+ Tambah</button>
+                    <button class="tambah">+ Tambah</button>
                 </div>
                 <div class="daftar__parent-wrapper-card">
                     <img src="./media/garlicbread.jpg" alt="">
                     <div class="daftar__parent-wrapper-card-desc">
-                        <h3>Korean Garlic Bread</h3>
-                        <h4>Rp60.000</h4>
-                        <p>per box isi 4</p>
+                        <h3 class="nama">Korean Garlic Bread</h3>
+                        <h4 class="harga">Rp60000</h4>
+                        <p class="detail">per box isi 4</p>
                     </div>
-                    <button>+ Tambah</button>
+                    <button class="tambah">+ Tambah</button>
                 </div>
                 <div class="daftar__parent-wrapper-card">
                     <img src="./media/garlicbread.jpg" alt="">
                     <div class="daftar__parent-wrapper-card-desc">
-                        <h3>Korean Garlic Bread</h3>
-                        <h4>Rp60.000</h4>
-                        <p>per box isi 4</p>
+                        <h3 class="nama">Korean Garlic Bread</h3>
+                        <h4 class="harga">Rp70000</h4>
+                        <p class="detail">per box isi 4</p>
                     </div>
-                    <button>+ Tambah</button>
+                    <button class="tambah">+ Tambah</button>
                 </div>
                 <div class="daftar__parent-wrapper-card">
                     <img src="./media/garlicbread.jpg" alt="">
                     <div class="daftar__parent-wrapper-card-desc">
-                        <h3>Korean Garlic Bread</h3>
-                        <h4>Rp60.000</h4>
-                        <p>per box isi 4</p>
+                        <h3 class="nama">Korean Garlic Bread</h3>
+                        <h4 class="harga">Rp60000</h4>
+                        <p class="detail">per box isi 4</p>
                     </div>
-                    <button>+ Tambah</button>
+                    <button class="tambah">+ Tambah</button>
                 </div>
             </div>
         </div>
@@ -80,8 +80,11 @@
 
     <div class="keranjang">
         <div class="keranjang__card">
-            <img src="./media/shopping-cart.svg" alt="">
-            <p>0 item di dalam keranjang</p>
+            <div class="keranjang__card-item">
+                <img src="./media/shopping-basket-2-line.svg" alt="">
+                <p><span class="keranjang__card-item-jumlah">0</span> item dalam keranjang</p>
+            </div>
+            <p>Rp<span class="keranjang__card-total">0</span></p>
         </div>
     </div>
 
